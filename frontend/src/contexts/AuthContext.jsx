@@ -33,7 +33,7 @@ export const AuthProvider = ({ children }) => {
             await axios.post('http://localhost:8080/auth/register', {
                 username,
                 password,
-                role: "ADMIN"
+                role: "USER"
             });
             return await login(username, password);
         } catch (error) {
